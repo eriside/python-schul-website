@@ -1,0 +1,78 @@
+.body{
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+a{
+	text-decoration: none;
+	
+}
+.tab div {
+    display: none;
+}
+
+.tab div:target {
+    display: block;
+  
+}
+main{
+	padding-top: 1%;
+}
+p{
+	font-size: 1.25rem;
+	
+}
+span{
+	font-size: 1rem;
+}
+header{
+	font-size: 1.5rem;
+}
+div.wrapper {
+    position:relative;
+    display:block;
+}
+div.wrapper img.img1 {
+    display:block;
+}
+div.wrapper img.img2 {
+    position:absolute;
+    top: 25%;
+    left:25%;
+	width: 50%;
+}
+
+footer{
+    bottom: 0%;
+}
+
+
+@media screen and (min-width: 1024px) {
+	main{
+	  padding-left: 20%;
+	  padding-right: 20%;
+	  margin: 0;
+    }
+	
+
+}
+@media screen and (max-width: 1023px) {
+	main{
+		padding-left: 10%;
+		padding-right: 10%;
+		margin: 0;
+	  }
+	
+	
+
+}
+@media screen and (max-width: 480px) {
+	main{
+		padding-left: 0%;
+		padding-right: 0%;
+		margin: 0;
+	  }
+	
+	
+	
+}
+

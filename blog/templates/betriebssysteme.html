@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <main>
+        <h3>Betriebssysteme</h3>
+        <p>Nach DIN 44300 umfasst ein Betriebssystem die Programme eines Rechners, die zusammen mit den Eigenschaften dieser Rechneranlage die Basis der möglichen Betriebsarten bilden und die Abwicklung von Programmen steuern und überwachen.</p>
+        <br>
+        <p>Unter einem Betriebssystem (engl. Operating System – OS) versteht man Software, die zusammen mit den Hardwareeigenschaften des Computers die Basis zum Betrieb bildet und insbesondere die Abarbeitung von Programmen steuert und überwacht.</p>
+        <p>Die Aufgaben eines Betriebssystems:</p>
+        <ul>
+            <li>Systembedienung und -speicherung sowie Fehlersuche</li>
+            <li>Regeln des Zugriffs auf die externen Speicher</li>
+            <li>Laden und Ausführen von Anwenderprogrammen</li>
+            <li>Speichern und Verwalten von Daten und Programmen</li>
+            <li>Steuern der Ein- und Ausgabegeräte in Koordination mit der CPU</li>
+        </ul>
+        <br>
+        <img src="{% static 'img/schalenmodell-bs.png' %}" alt="">
+        <h4>Architektur des Betriebssystems</h4>  
+        <p>Zur logischen Strukturierung wird das Betriebssystem in mehrere Schichten eingeteilt.</p>
+        <ul>
+            <li>Die unterste Schicht verwaltet die Hardware des Rechners.</li>
+            <li>In der darüber liegenden Schicht sind die grundlegenden Ein-/Ausgabe-Dienste für Plattenspeicher und Peripheriegeräte enthalten.</li>
+            <li>In der dritten Schicht sind die Kommunikations- und Netzwerkdienste, Dateien und Dateisysteme untergebracht.</li>
+            <li>In der Anwenderschicht liegen die Softwareschnittstellen zu den Programmen.</li>
+        </ul>
+        <br>
+        <p>Jede Schicht bildet eine abstrakte Maschine, die mit ihren benachbarten Schichten über definierte Schnittstellen kommuniziert. Sie kann Funktionen der nächstniedrigeren Schicht aufrufen und ihrerseits Funktionen für die nächsthöhere Schicht zur Verfügung stellen. Das Zusammenspiel der Schichten wird in Vorschriften, sogenannten Protokollen geregelt. Die unterste Schicht setzt immer direkt auf der Rechner-Hardware auf.</p>
+    </main>
+
+
+    {% endblock %}

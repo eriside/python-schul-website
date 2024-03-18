@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <main>
+      <h3>Bootstrap</h3>
+      <br>
+      <p>Bootstrap wurde als CSS Framework für diese Website verwendet. Hier findest du einige Infos darüber!</p>
+      <p>Bootstrap ist ein Open-Source-Framework für die Frontend-Entwicklung von Webanwendungen. Es wurde von Twitter entwickelt und bietet eine Sammlung von Tools, die die Gestaltung von Websites und Webanwendungen erleichtern. Bootstrap basiert auf HTML, CSS und JavaScript und enthält vordefinierte Designelemente wie Grid-Systeme, Typografie, Formulare, Buttons, Navigationsleisten und andere UI-Komponenten.</p>
+      <br>
+      <h4>Die Hauptvorteile von Bootstrap sind:</h4>
+      <div class="row">
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-responsive-list" data-bs-toggle="list" href="#list-responsive" role="tab" aria-controls="list-responsive">Responsives Design</a>
+            <a class="list-group-item list-group-item-action" id="list-komponenten-list" data-bs-toggle="list" href="#list-komponenten" role="tab" aria-controls="list-komponenten">Vordefinierte Komponenten</a>
+            <a class="list-group-item list-group-item-action" id="list-kompabilitaet-list" data-bs-toggle="list" href="#list-kompabilitaet" role="tab" aria-controls="list-kompabilitaet">Browserkompatibilität</a>
+            <a class="list-group-item list-group-item-action" id="list-anpassbarkeit-list" data-bs-toggle="list" href="#list-anpassbarkeit" role="tab" aria-controls="list-anpassbarkeit">Anpassbarkeit</a>
+            <a class="list-group-item list-group-item-action" id="list-gemeinschaft-list" data-bs-toggle="list" href="#list-gemeinschaft" role="tab" aria-controls="list-gemeinschaft">Gemeinschaft und Dokumentation</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="list-responsive" role="tabpanel" aria-labelledby="list-responsive-list">Bootstrap bietet ein responsives Grid-System, das es Entwicklern ermöglicht, Layouts zu erstellen, die sich automatisch an verschiedene Bildschirmgrößen anpassen, einschließlich Desktops, Tablets und Smartphones.</div>
+            <div class="tab-pane fade" id="list-komponenten" role="tabpanel" aria-labelledby="list-komponenten-list">Bootstrap enthält eine Vielzahl von vordefinierten UI-Komponenten und -Stilen, die Entwicklern helfen, schnell und einfach eine ansprechende Benutzeroberfläche zu erstellen, ohne jedes Mal von Grund auf neu beginnen zu müssen.</div>
+            <div class="tab-pane fade" id="list-kompabilitaet" role="tabpanel" aria-labelledby="list-kompabilitaet-list">Bootstrap sorgt für eine konsistente Darstellung auf verschiedenen Browsern und Geräten, indem es CSS- und JavaScript-Kompatibilitätsprobleme behandelt.</div>
+            <div class="tab-pane fade" id="list-anpassbarkeit" role="tabpanel" aria-labelledby="list-anpassbarkeit-list">Obwohl Bootstrap eine Reihe von vorgefertigten Komponenten bietet, ist es auch sehr anpassbar. Entwickler können das Framework erweitern, indem sie eigene CSS-Stile definieren oder vorhandene Komponenten anpassen.</div>
+            <div class="tab-pane fade" id="list-gemeinschaft" role="tabpanel" aria-labelledby="list-gemeinschaft-list">Bootstrap wird von einer großen Entwicklergemeinschaft unterstützt und verfügt über umfangreiche Dokumentation, Tutorials und Beispiele, die Entwicklern helfen, das Framework schnell zu erlernen und effektiv zu nutzen.</div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <p>Bootstrap hat dazu beigetragen, die Entwicklung von Webanwendungen zu beschleunigen, indem es Entwicklern eine solide Grundlage und Werkzeuge zur Verfügung stellt, um ansprechende und benutzerfreundliche Benutzeroberflächen zu erstellen.</p>
+      
+    </main>
+
+
+
+    {% endblock %}
